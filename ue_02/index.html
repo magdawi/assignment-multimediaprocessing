@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Multimedia Processing: ue_02</title>
+    <script type="text/javascript" language="JavaScript" src="convert.js"></script>
+    <script type="text/javascript" language="JavaScript" src="decode.js"></script>
+    <script type="text/javascript" language="JavaScript" src="entropy.js"></script>
+    <script type="text/javascript" language="JavaScript" src="relativ_frequency.js"></script>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+  	<h2>Multimedia Processing</h2>
+  	<div>
+  		<h3>Convert</h3>
+  		<form>
+  			<label>
+  				<span class="label">Number:</span>
+  				<input type="number" min="1" id="number" onchange="convert()"/>
+			</label><br>
+  			<label>
+	  			<span class="label">Base from Number:</span>
+	  			<input type="number" min="1" id="fromBase" onchange="convert()"/></label><br>
+  			<label>
+  				<span class="label">Convert to Base:</span>
+  				<input type="number" min="1" id="toBase" onchange="convert()"/>
+  			</label><br>
+  		</form>
+  		<p class="resultarea">Result: <span class="result" id="convert_result">...</span></p>
+  	</div>
+  	<div>
+  		<h3>Decode</h3>
+  		<form>
+  			<label>
+  				<span class="label">String:</span>
+  				<input type="text" id="string" pattern="[01]+" onchange="decode()"/>
+			</label>
+  		</form>
+  		<p class="resultarea">Result: <span class="result" id="decode_result">...</span></p>
+  	</div>
+  	<div>
+  		<h3>Relative Frequency</h3>
+  		<form>
+  			<label>
+  				<span class="label">Inputtext:</span>
+  				<textarea id="text" onchange="frequency()"></textarea>
+			</label>
+  		</form>
+  		<p class="resultarea">Result: <span class="result">...</span></p>
+  		<ul id="frequency_list" class="result">
+  		<li></li>
+  		</ul>
+  	</div>
+  	<div>
+  		<h3>Entropy</h3>
+  		<p><i>Input from result of 'Relative Frequency'</i></p>
+  		<p class="resultarea">Result: <span class="result" id="entropy_result">...</span></p>
+  	</div>
+
+  </body>
+</html>

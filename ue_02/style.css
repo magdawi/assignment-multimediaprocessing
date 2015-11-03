@@ -1,0 +1,40 @@
+html{
+	padding: 2em;
+	margin:0 auto;
+}
+h2{
+	margin-left:2em;
+}
+div{
+	border: 1px solid #000;
+	padding: 1em;
+	width: 27em;
+	margin: 2em 3em;
+	display: inline-block;
+	height: auto;
+	vertical-align: top;
+}
+.label{
+	width: 11em;
+	display: inline-block;
+	vertical-align: top;
+}
+input{
+	width: 16em;
+}
+textarea{
+	width:19.5em;
+}
+.resultarea{
+	font-weight: bold;
+	margin-top: 3em;
+}
+.result{
+	margin-left: 20px;
+	color: #66CC33;
+}
+ul{
+	list-style-type: none;
+}
+
+
